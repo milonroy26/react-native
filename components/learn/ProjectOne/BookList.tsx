@@ -71,7 +71,7 @@ export default function BookList() {
 
                         <View style={styles.subtitle}>
                             <Text > {book.author} </Text>
-                            <Text> ${book.price} </Text>
+                            <Text style={styles.bookPrice}> ${book.price} </Text>
                         </View>
                         
                         <View style={styles.cardFooter}>
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
 
     card: {
         width: 310,
-        height: 360,
+        height: 310,
         borderRadius: 7,
         marginVertical: 10,
         marginHorizontal:6,
@@ -144,8 +144,15 @@ const styles = StyleSheet.create({
 
     subtitle:{
         color: '#000000',
-        fontSize: 14,
         marginBottom: 6,
+
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    },
+
+    bookPrice: {
+        color: 'green',
+        fontWeight: 'bold',
     },
 
     description: {
@@ -161,7 +168,7 @@ const styles = StyleSheet.create({
         fontSize: 12,
         fontWeight: '500',
         marginTop: 4,
-        marginBottom: 8,
+        marginBottom: 2,
         textAlign: 'right',
     },
 })
