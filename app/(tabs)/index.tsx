@@ -5,6 +5,8 @@ import ProjectOne from '@/components/learn/ProjectOne/ProjectOne';
 import ProjectThere from '@/components/learn/projectThere/ProjectThere';
 import ProjectFore from '@/components/learn/projectFore/ProjectFore';
 import ProjectFive from '@/components/learn/projectFive/ProjectFive';
+import ProjectSix from '@/components/learn/projectSix/ProjectSix';
+import ProjectSeven from '@/components/learn/projectSeven/ProjectSeven';
 
 
 export default function HomeScreen() {
@@ -33,7 +35,9 @@ export default function HomeScreen() {
         <>
             {/* <ProjectThere /> */}
             {/* <ProjectFore /> */}
-            <ProjectFive />
+            {/* <ProjectFive /> */}
+            {/* <ProjectSix /> */}
+            <ProjectSeven />
         </>
     );
 }
